@@ -17,7 +17,7 @@ job('Aplicacion Node.js Docker DSL Docker') {
             repositoryName('duvis07/nodejsapp')
             tag('${GIT_REVISION,length=7}')
             registryCredentials('docker-hub')
-            forcePull(true)
+            forcePull(false)
             createFingerprints(false)
             skipDecorate()
         }
